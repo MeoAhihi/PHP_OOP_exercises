@@ -2,9 +2,11 @@
 
 require 'fraction.php';
 
-$a = new fraction\fraction(5, 9);
-echo $a.PHP_EOL;
+$a = new \fraction\fraction(3,8);
+$b = new fraction\fraction(-1, 3);
 
-$a->input(4,-8);
-$a->simplify();
-echo $a;
+echo $a->add($b).'<br>';
+echo $a->subtract($b).'<br>';
+echo $a->multiply($b).'<br>';
+echo $a->divide($b).'<br>';
+echo $a->compare($b).'<br>';
